@@ -8,7 +8,8 @@ echo "[+] Action start"
 SOURCE_DIRECTORY="${1}"
 DESTINATION_DIRECTORY="${2}"
 
-ls
 echo " - Source directory: $SOURCE_DIRECTORY"
 echo " - Destination directory: $DESTINATION_DIRECTORY"
-ls
+
+echo "[+] Copy source to destination"
+CP "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
