@@ -1,0 +1,23 @@
+name: 'Action Hugo Notes'
+description: 'Github Actions for formatting my personal notes into Hugo content'
+author: 'Alexandre Lamberty <mail@alexandrelamberty.com>'
+inputs:
+  source:
+    description: 'Source folder'
+    required: false
+    default: 'build/'
+  destination:
+    description: 'Destination folder'
+    required: false
+    default: 'build/'
+  args:
+    description: 'Arguments inputs'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
+branding:
+  icon: 'file-text'
+  color: 'blue'
