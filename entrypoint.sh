@@ -12,4 +12,4 @@ echo " - Source directory: $SOURCE_DIRECTORY"
 echo " - Destination directory: $DESTINATION_DIRECTORY"
 
 echo "[+] Copy source to destination"
-CP "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
+cp "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
