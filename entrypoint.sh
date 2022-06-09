@@ -11,5 +11,4 @@ DESTINATION_DIRECTORY="${2}"
 ls
 echo " - Source directory: $SOURCE_DIRECTORY"
 echo " - Destination directory: $DESTINATION_DIRECTORY"
-cp -r "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
 ls
