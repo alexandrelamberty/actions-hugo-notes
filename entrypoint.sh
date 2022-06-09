@@ -11,5 +11,8 @@ DESTINATION_DIRECTORY="${2}"
 echo " - Source directory: $SOURCE_DIRECTORY"
 echo " - Destination directory: $DESTINATION_DIRECTORY"
 
+echo "[+] Create destination folder"
+mkdir "$SOURCE_DIRECTORY"
+
 echo "[+] Copy source to destination"
 cp "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
