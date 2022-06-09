@@ -15,4 +15,3 @@ echo "[+] Create destination folder"
 mkdir "$DESTINATION_DIRECTORY"
 
 echo "[+] Copy source to destination"
-cp "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
