@@ -8,8 +8,8 @@ echo "[+] Action start"
 SOURCE_DIRECTORY="${1}"
 DESTINATION_DIRECTORY="${2}"
 
-cat /github/workspace/README.md
+ls
 echo " - Source directory: $SOURCE_DIRECTORY"
-ls "$SOURCE_DIRECTORY"
 echo " - Destination directory: $DESTINATION_DIRECTORY"
 cp -r "$SOURCE_DIRECTORY" "$DESTINATION_DIRECTORY"
+ls
