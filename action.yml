@@ -10,14 +10,12 @@ inputs:
     description: 'Destination folder'
     required: false
     default: 'build/'
-  args:
-    description: 'Arguments inputs'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.args }}
+    - ${{ inputs.source }}
+    - ${{ inputs.destination }}
 branding:
   icon: 'file-text'
   color: 'blue'
